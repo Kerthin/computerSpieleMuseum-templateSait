@@ -1,0 +1,289 @@
+@media screen and (max-width: 1080px) {
+	.container {
+		.firstBlock {
+
+			.circle {
+				width: 82px;
+				height: 82px;
+				border: 20px solid #00ace4;
+
+				&._1 {
+					top: -41px;
+					left: 27px;
+				}
+
+				&._2 {
+					top: 79px;
+					left: 120px;
+				}
+				&._3 {
+					border-color: #fed100;
+					border-bottom-color: transparent;
+					border-right-color: transparent;
+				}
+			}
+
+
+			.wrap {
+				width: 480px;
+				height: 420px;
+
+				.topFigures {
+					height: 120px;
+
+					.topFigures__lineBlock {
+						left: 120px;
+						width: 130px;
+						height: 120px;
+
+						.topFigures__line {
+							left: -85%;
+						}
+
+						.topFigures__bonus {
+							font-size: 20px;
+						}
+					}
+
+					.bigCircle {
+						left: 240px;
+						width: 240px;
+						height: 240px;
+						border: 30px solid #fed100;
+					}
+				}
+
+				.menuBlocks {
+					height: 240px;
+
+					.menuItem {
+						width: 120px;
+						height: 120px;
+
+						.lineStart {
+							top: 80px;
+							height: 175px;
+						}
+						.menuItem__startBlock {
+							width: 80px;
+							height: 80px;
+
+							.menuItem__start {
+								font-size: 20px;
+							}
+						}
+
+
+						.triangle {
+							border-left: 60px solid transparent;
+							border-right: 60px solid transparent;
+							border-top: 100px solid #ffffdd;
+
+							.insideTriangle {
+								border-left: 30px solid transparent;
+								border-right: 30px solid transparent;
+								border-top: 50px solid #00ace4;
+							}
+						}
+
+
+						.crossTitleWrap {
+							top: -33px;
+
+							.crossTitle {
+								font-size: 20px;
+							}
+						}
+						.cross {
+							width: 100px;
+							height: 100px;
+
+							.cross__line {
+								top: -7.5px;
+								width: 21px;
+								height: 115px;
+
+								&._left {
+									left: 39.5px;
+								}
+								&._right {
+									right: 39.5px;
+								}
+							}
+						}
+
+
+						.circleCalendarWrap {
+							right: -41px;
+							width: 82px;
+							height: 82px;
+						}
+
+
+						.angleLine {
+							height: 85px;
+						}
+
+
+						.centerLine {
+							height: 60px;
+						}
+
+
+						.circleCult {
+							left: 20px;
+							width: 240px;
+							height: 240px;
+							border: 30px solid #ffffdd;
+						}
+
+
+						.hoverBlock__info {
+							bottom: 10px;
+							left: 15px;
+
+							.hoverBlock__data {
+								font-size: 10px;
+							}
+							.hoverBlock__text {
+								font-size: 17px;
+								line-height: 17px;
+							}
+						}
+						.hoverBlock__angle {
+							border-bottom: 80px solid;
+							border-right: 80px solid transparent;
+						}
+					}
+				}
+
+				.bottomFigures {
+					height: 60px;
+
+					.middleCircle {
+						width: 120px;
+						height: 120px;
+						border: 20px solid #00ace4;
+
+						&._1 {
+							top: -60px;
+							left: 75px;
+						}
+						&._2 {
+							top: -60px;
+							left: 360px;
+						}
+					}
+					.square {
+						width: 60px;
+						height: 60px;
+
+						&._1 {
+							left: 240px;
+						}
+					}
+				}
+			}
+		}
+
+
+		.secondBlock {
+			.newsWrap {
+				width: 720px;
+
+				.news {
+					margin-bottom: 15px;
+					margin-right: 15px;
+					width: 230px;
+					height: 230px;
+
+					.squareBox {
+						.squareBox__square {
+							width: 125px;
+							height: 125px;
+
+							.squareBox__title {
+								font-size: 30px;
+							}
+						}
+					}
+
+
+					.articleBox {
+
+						.articleBox__angle {
+							border-top: 15px solid;
+							border-left: 15px solid transparent;
+						}
+						.articleBox__text {
+							padding: 17px;
+
+							.articleBox__more {
+								font-size: 10px;
+							}
+							.articleBox__info {
+								width: calc(100% - 35px);
+								bottom: 17px;
+
+								.articleBox__title {
+									font-size: 30px;
+								}
+								.articleBox__paragraph {
+									font-size: 11px;
+								}
+							}
+						}
+					}
+
+
+					.angleBox {
+						.angleBox__angle {
+							border-top: 230px solid;
+							border-left: 230px solid transparent;
+						}
+						.angleBox__title {
+							font-size: 30px;
+						}
+					}
+
+					.hoverBlock {
+						.hoverBlock__info {
+							bottom: 15px;
+							left: 20px;
+
+							&.hoverBlock__data {
+								font-size: 15px;
+							}
+
+							.hoverBlock__text {
+								font-size: 25px;
+								line-height: 30px;
+							}
+						}
+
+						.hoverBlock__angle {
+							border-bottom: 160px solid;
+							border-right: 160px solid transparent;
+						}
+					}
+
+
+					.crossBox {
+						.crossBox__item {
+							top: -47.5px;
+							width: 40px;
+							height: 325px;
+
+							&._left {
+								left: 95px;
+							}
+							&._right {
+								right: 95px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

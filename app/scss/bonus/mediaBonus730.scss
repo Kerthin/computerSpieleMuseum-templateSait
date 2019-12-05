@@ -1,0 +1,67 @@
+@media screen and (max-width: 730px) {
+	.artBlock {
+		.artWrap {
+			width: 564px;
+
+			.artNews {
+				margin: 0 78px 15px;
+
+				&:nth-child(3n-2) {
+					margin-left: 0px;
+					margin-right: 0px;
+				}
+			}
+		}
+	}
+
+	/* Exhib Block */
+	.exhibBlock {
+		.breveWrap {
+			width: 355px;
+
+			.breveBox {
+				width: 100%;
+
+				.circleWrap {
+					width: 82px;
+					height: 82px;
+
+					.circle {
+						width: 82px;
+						height: 82px;
+						border: 20px solid;
+					}
+				}
+				.bLine {
+					width: calc(100% - 41px);
+				}
+
+				.breveTitle {
+					width: 170px;
+
+					.breveTitle__text {
+						margin-bottom: -7px;
+						font-size: 30px;
+						letter-spacing: 2px;
+					}
+				}
+				.breveMounth {
+					padding: 2px 5px 0;
+					width: 170px;
+
+					.breveMounth__text {
+						font-size: 17px;
+					}
+				}
+			}
+		}
+
+		.exhibWrap {
+			width: 340px;
+
+			.exhibNews {
+				margin-right: 0;
+			}
+		}
+	}
+}

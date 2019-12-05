@@ -1,0 +1,42 @@
+//- NUMBER MENU CASE
+- var friends = 1
+
+//- EXHIB ITEM
+mixin exhibArticleMix(exhibName, exhibDate, exhibBg)
+	.exhibNews
+		.exhibNews__article
+			h2.exhibNews__title #{exhibName}
+			h2.exhibNews__date #{exhibDate}
+		.exhibNews__img(class=`_ex${exhibBg}`)
+mixin exhibTriangleMix(btColor)
+	.exhibNews
+		.exhibNews__triangle(class=`_bt${btColor}`)
+			.exhibNews__insideTriangle
+mixin exhibCircleMix(borderColor)
+	.exhibNews
+		.exhibNews__circle(class=`_b${borderColor}`)
+mixin exhibCrossMix(bgColor)
+	.exhibNews
+		.exhibNews__cross
+			.exhibNews__crossItem(class=`_bg${bgColor}`)
+			.exhibNews__crossItem(class=`_bg${bgColor}`)
+mixin exhibSquareMix(borderColor)
+	.exhibNews
+		.exhibNews__square(class=`_b${borderColor}`)
+
+//- ART NEWS ITEM
+mixin artNewsMix(artDate, artBg, artName, articleParagraph)
+	.artNews
+		.artNews__dateBox
+			p.artNews__date #{artDate}
+		.artNews__img(class=`_${artBg}`)
+		.artNews__angle
+		.artNews__about
+			.artNews__article
+				h1.artNews__title #{artName}
+				p.artNews__paragraph= artParagraphArray[`${articleParagraph}`]
+			.artNews__buttonWrap
+				button.artNews__button LEER MÁS
+
+//- PARAGRAPH ARRAY
+- var artParagraphArray = ['La exolution, las infinitas etapas de este clasico dicarrollado por Hironobu Sakaguchi en 1997. Final Fantasy ocmeres en la consola de Nintendo Family Computer (tarnbier conacide como "famicorn", y conecido come Nintendo Entertainment System)']

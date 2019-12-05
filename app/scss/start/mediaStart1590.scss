@@ -1,0 +1,14 @@
+@media screen and (max-width: 1590px) {
+	.startBlock {
+		.presentBlock {
+			width: 980px;
+
+			.presentBlock__menu {
+				display: none;
+			}
+			&.psOneChose {
+				width: 1116px;
+			}
+		}
+	}
+}

@@ -1,0 +1,200 @@
+.sideBlock {
+	width: 100%;
+	height: 210px;
+	background-color: #ffffdd;
+}
+.scm {
+	position: absolute;
+	padding: 25px;
+
+	.scm__logo {
+		font-family: 'Basica';
+		font-size: 25px;
+		line-height: 20px;
+		color: #000;
+	}
+}
+
+.openMuseum {
+	position: absolute;
+	right: 0;
+	padding: 25px;
+
+	.museumAngle {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 0;
+		border-top: 30px solid #da2110;
+		border-left: 30px solid transparent;
+	}
+
+	.openTime {
+		width: 140px;
+		margin-bottom: 25px;
+
+		.openTime__title, .openTime__clock {
+			font-family: 'Basica';
+			line-height: 20px;
+			color: #da2110;
+		}
+
+		.openTime__title {
+			font-size: 17px;
+		}
+	}
+
+	.coinForm {
+		width: 140px;
+
+		.coinForm__button {
+			width: 140px;
+			height: 30px;
+			border: 3px solid #da2110;
+			outline: none;
+			font-family: 'Basica';
+			font-size: 17px;
+			color: #da2110;
+			margin-bottom: 10px;
+			cursor: pointer;
+			background-color: #ffffdd;
+			transition: all .3s;
+
+			&:hover {
+				background-color: #da2110;
+				color: #ffffdd;
+			}
+		}
+
+		.coinForm__search {
+			width: 140px;
+			height: 30px;
+			border: 3px solid #da2110;
+
+			.coinForm__icon {
+				float: left;
+				width: 30px;
+				height: 100%;
+			}
+
+			.coinForm__input {
+				float: left;
+				width: 104px;
+				height: 100%;
+				border: 0;
+				outline: 0;
+				font-family: sans-serif;
+				font-size: 20px;
+				color: #da2110;
+				background-color: transparent;
+			}
+		}
+	}
+}
+
+.menu {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	padding-top: 25px;
+
+	a {
+		float: left;
+	}
+
+	.menu__item {
+		position: relative;
+		float: left;
+		margin: 0 5px;
+		width: 45px;
+		height: 45px;
+
+		.menu__bonus {
+			position: absolute;
+			border-left: 22.5px solid transparent;
+			border-right: 22.5px solid transparent;
+			border-bottom: 45px solid #00ace4;
+
+			+ .menu__description {
+				margin-top: 45px;
+				border-left: 3px solid #00ace4;
+
+				.menu__title,
+				.menu__subtitle {
+					color: #00ace4;
+				}
+			}
+		}
+		.menu__start {
+			width: 100%;
+			height: 100%;
+			background-color: #da2110;
+
+			+ .menu__description {
+				border-left: 3px solid #da2110;
+
+				.menu__title,
+				.menu__subtitle {
+					color: #da2110;
+				}
+			}
+		}
+		.menu__level {
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			background-color: #fed100;
+
+			+ .menu__description {
+				border-left: 3px solid #fed100;
+
+				.menu__title,
+				.menu__subtitle {
+					color: #fed100;
+				}
+			}
+		}
+		.menu__description {
+			position: relative;
+			margin-left: 21px;
+			width: 260px;
+			height: 135px;
+
+			.menu__text {
+				position: absolute;
+				bottom: 0;
+				padding-left: 10px;
+				width: 100%;
+
+				.menu__title,
+				.menu__subtitle {
+					font-family: sans-serif;
+				}
+				.menu__title {
+					font-size: 50px;
+				}
+				.menu__subtitle {
+					font-size: 20px;
+				}
+			}
+		}
+		.menu__playerItem {
+			position: absolute;
+			width: 13px;
+			height: 100%;
+			background-color: #000;
+
+			&:nth-child(1) {
+				left: 16px;
+				transform: rotate(45deg);
+			}
+			&:nth-child(2) {
+				right: 16px;
+				transform: rotate(-45deg);
+			}
+		}
+	}
+}
+
+@import 'header/mediaHeader1366.scss';
+@import 'header/mediaHeader730.scss';

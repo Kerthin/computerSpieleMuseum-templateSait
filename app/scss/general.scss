@@ -1,0 +1,30 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+::-webkit-scrollbar {
+	width: 0;
+}
+@font-face {
+	font-family: Basica;
+	src: url("../fonts/basica_lite.ttf") format("truetype");
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+._fl {
+	float: left;
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}

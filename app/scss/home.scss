@@ -1,0 +1,44 @@
+@import 'home/homeVariables.scss';
+
+.circle {
+	position: absolute;
+	width: 165px;
+	height: 165px;
+	border-radius: 50%;
+	border: 40px solid #00ace4;
+
+	&._1 {
+		top: -82.5px;
+		left: 55px;
+		border-top-color: transparent;
+		border-left-color: transparent;
+		transform: rotate(45deg);
+	}
+
+	&._2 {
+		top: 158px;
+		left: 240px;
+		border-bottom-color: transparent;
+		border-right-color: transparent;
+		transform: rotate(45deg);
+	}
+	&._3 {
+		border-color: #fed100;
+		border-bottom-color: transparent;
+		border-right-color: transparent;
+		transform: rotate(45deg);
+	}
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+
+	@import 'home/firstBlock.scss';
+	@import 'home/secondBlock.scss';
+}
+
+@import 'home/mediaHome1440.scss';
+@import 'home/mediaHome1080.scss';
+@import 'home/mediaHome730.scss';

@@ -1,0 +1,262 @@
+.secondBlock {
+	position: relative;
+	padding: 50px 0 100px;
+	width: 100%;
+	background-color: #ffffdd;
+
+	.newsWrap {
+		position: relative;
+		margin: 0 auto;
+		width: 1420px;
+
+		.news {
+			position: relative;
+			display: block;
+			float: left;
+			margin-bottom: 20px;
+			margin-right: 20px;
+			width: 460px;
+			height: 460px;
+			cursor: pointer;
+
+			&:nth-child(3n) {
+				margin-right: 0;
+			}
+
+			.squareBox {
+				position: relative;
+				width: 100%;
+				height: 100%;
+
+				.squareBox__square {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translateY(-50%) translateX(-50%);
+					width: 250px;
+					height: 250px;
+					text-align: center;
+					padding-top: 5px;
+					background-color: #ffffdd;
+
+					.squareBox__title {
+						font-family: sans-serif;
+						font-size: 60px;
+						font-weight: 900;
+						color: #da2110;
+					}
+				}
+			}
+
+			.articleBox {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				border: 5px solid;
+
+				.articleBox__angle {
+					position: absolute;
+					right: 0;
+					width: 0; 
+					height: 0;
+					border-top: 30px solid;
+					border-left: 30px solid transparent;
+				}
+
+				.articleBox__text {
+					position: relative;
+					padding: 35px;
+					width: 100%;
+					height: 100%;
+					overflow: hidden;
+
+					.articleBox__more {
+						font-family: sans-serif;
+						font-size: 20px;
+						font-weight: 900;
+						text-align: right;
+					}
+
+					.articleBox__info {
+						position: absolute;
+						width: calc(100% - 70px);
+						bottom: 35px;
+
+						.articleBox__title {
+							padding: 20px 0;
+							font-family: sans-serif;
+							font-size: 60px;
+							font-weight: 900;
+						}
+
+						.articleBox__paragraph {
+							font-family: sans-serif;
+							font-size: 22px;
+							font-weight: 500;
+						}
+					}
+				}
+
+				&._red {
+					border-color: #da2110;
+					background-color: transparent;
+					color: #da2110;
+				}
+
+				&._blue {
+					border-color: #00ace4;
+					background-color: transparent;
+					color: #00ace4;
+				}
+
+				&._yellow {
+					border-color: #fed100;
+					background-color: transparent;
+					color: #fed100;
+				}
+			}
+
+			.imgBox {
+				width: 100%;
+				height: 100%;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+
+				@mixin newsStaticBgMix($newsStaticBg) {
+					&._#{$newsStaticBg} {
+						background-image: url(#{$newsStaticBgPath}/#{$newsStaticBg}.jpg);
+					}
+				}
+
+				@include newsStaticBgMix(mario);
+				@include newsStaticBgMix(monumentValley);
+				@include newsStaticBgMix(retroConsole);
+				@include newsStaticBgMix(atariNeon);
+			}
+
+			.hoverBlock {
+				.hoverBlock__info {
+					bottom: 30px;
+					left: 40px;
+
+					&.hoverBlock__data {
+						font-size: 30px;
+					}
+
+					.hoverBlock__text {
+						font-size: 50px;
+						line-height: 60px;
+					}
+				}
+
+				.hoverBlock__angle {
+					border-bottom: 320px solid;
+					border-right: 320px solid transparent;
+				}
+			}
+
+			.angleBox {
+				position: relative;
+				width: 100%;
+				height: 100%;
+
+				.angleBox__angle {
+					position: absolute;
+					right: 0;
+					width: 0; 
+					height: 0;
+					border-top: 460px solid;
+					border-left: 460px solid transparent;
+				}
+				.angleBox__title {
+					position: absolute;
+					bottom: 0px;
+					font-family: sans-serif;
+					font-size: 60px;
+					font-weight: 900;
+				}
+
+				&._blue {
+					color: #00ace4;
+				}
+			}
+
+			.circleBox {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+
+				&._yellow {
+					background-color: #fed100;
+				}
+			}
+
+			.crossBox {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+
+				.crossBox__item {
+					position: absolute;
+					top: -95px;
+					width: 80px;
+					height: 650px;
+
+					&._left {
+						left: 190px;
+						transform: rotate(45deg);
+					}
+
+					&._right {
+						right: 190px;
+						transform: rotate(-45deg);
+					}
+				}
+
+				&._black {
+					.crossBox__item {
+						background-color: #000;
+					}
+				}
+			}
+
+			._red {
+				background-color: #da2110;
+			}
+
+			@mixin newsHoverBgMix($hoverBg, $angleColor) {
+				._#{$hoverBg} {
+					background-image: url(#{$newsBgPathDesktop}/#{$hoverBg}.jpg);
+
+					.hoverBlock__angle {
+						border-bottom-color: #{$angleColor} !important;
+					}
+
+					@media screen and (max-width: 1440px) {
+						background-image: url(#{$newsBgPathLaptop}/#{$hoverBg}.jpg);
+					}
+
+					@media screen and (max-width: 1080px) {
+						background-image: url(#{$newsBgPathTablet}/#{$hoverBg}.jpg);
+					}
+
+					@media screen and (max-width: 730px) {
+						background-image: url(#{$newsBgPathLaptop}/#{$hoverBg}.jpg);
+					}
+				}
+			}
+
+			@include newsHoverBgMix(museum, $museumAngleColor);
+			@include newsHoverBgMix(cratos, $cratosAngleColor);
+			@include newsHoverBgMix(exhibition, $exhibitionAngleColor);
+			@include newsHoverBgMix(pacman, $pacmanAngleColor);
+
+			&:hover .hoverBlock {
+				height: 100%;
+			}
+		}
+	}
+}

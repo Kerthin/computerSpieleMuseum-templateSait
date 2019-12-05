@@ -1,0 +1,153 @@
+.atari {
+	display: none;
+	position: relative;
+	width: 900px;
+	height: 355px;
+
+	.atari__receiver {
+		position: absolute;
+		left: 50%;
+		transform:translateX(-50%);
+		width: calc(100% - 340px);
+		border-bottom: 108px solid #da2110;
+		border-left: 30px solid transparent;
+		border-right: 30px solid transparent;
+		z-index: 3;
+
+		.atari__receiverInside {
+			position: absolute;
+			top: 9px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: calc(100% + 30px);
+			border-bottom: 88px solid #fed100;
+			border-left: 25px solid transparent;
+			border-right: 25px solid transparent;
+
+			.atari__connector {
+				position: absolute;
+				top: 15px;
+				left: 20px;
+				width: 58px;
+				height: 58px;
+				border: 10px solid #da2110;
+				border-radius: 5px;
+				background-color: #ffffdd;
+			}
+		}
+	}
+	.atari__panel {
+		position: absolute;
+		top: 38px;
+		left: 50%;
+		transform:translateX(-50%);
+		width: calc(100% - 60px);
+		height: 100px;
+		border-bottom: 100px solid #da2110;
+		border-left: 30px solid transparent;
+		border-right: 30px solid transparent;
+		z-index: 2;
+
+		.atari__panelInside {
+			position: absolute;
+			top: 10px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: calc(100% + 30px);
+			border-bottom: 78px solid #ffffdd;
+			border-left: 24px solid transparent;
+			border-right: 24px solid transparent;
+
+			.atari__toggleWrap {
+				position: absolute;
+				top: 18px;
+
+				.atari__toggle {
+					float: left;
+					width: 30px;
+					height: 55px;
+					margin-right: 8px;
+					border-radius: 5px;
+					background-color: #da2110;
+
+					.atari__button {
+						margin: 10px 11px;
+						width: 8px;
+						height: 12px;
+						border-radius: 2px;
+						background-color: #fed100;
+					}
+
+					&:last-child {
+						margin-right: 0;
+					}
+				}
+
+				&:nth-child(1) {
+					left: 20px;
+				}
+				&:nth-child(2) {
+					right: 20px;
+				}
+			}
+		}
+	}
+	.atari__housing {
+		position: absolute;
+		bottom: 43px;
+		width: 100%;
+		height: 240px;
+		border: 10px solid #da2110;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		background-color: #ffffdd;
+
+		.atari__latticeWrap {
+			position: absolute;
+			bottom: 60px;
+			left: 50%;
+			transform:translateX(-50%);
+			width: calc(100% - 40px);
+
+			.atari__lattice {
+				width: 100%;
+				height: 10px;
+				margin-bottom: 10px;
+				border-radius: 2px;
+				background-color: #da2110;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+		.atari__line {
+			position: absolute;
+			bottom: 18px;
+			width: 100%;
+			height: 12px;
+			background-color: #da2110;
+		}
+	}
+	.trapeze {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
+		border-top: 43px solid #da2110;
+		border-left: 30px solid transparent;
+		border-right: 30px solid transparent;
+
+		.trapezeInside {
+			position: absolute;
+			bottom: 9px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: calc(100% + 35px);
+			border-top: 34px solid #fed100;
+			border-left: 24px solid transparent;
+			border-right: 24px solid transparent;
+		}
+	}
+}

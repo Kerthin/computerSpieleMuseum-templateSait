@@ -1,0 +1,189 @@
+$socialBgPath : "../image/social";
+
+.footer {
+	position: relative;
+	width: 100%;
+	height: 280px;
+	background-color: #ffffdd;
+
+	.footerWrap {
+		position: relative;
+		margin: 0 auto;
+		max-width: 1420px;
+		height: 100%;
+		border-top: 5px solid #da2110;
+
+		.minCircle {
+			position: absolute;
+			top: -60px;
+			left: -60px;
+			width: 120px;
+			height: 120px;
+			border-radius: 50%;
+			border: 20px solid #da2110;
+			border-bottom-color: transparent;
+			border-right-color: transparent;
+			transform: rotate(45deg);
+		}
+		.square {
+			position: absolute;
+			width: 120px;
+			height: 120px;
+			z-index: 2;
+
+			&._2 {
+				top: 40px;
+				background-color: #da2110;
+
+				.squareLine {
+					position: absolute;
+					left: -80px;
+					transform-origin: 50% 118px;
+					transform:rotate(45deg);
+					top: 80px;
+					width: 4px;
+					height: 180px;
+					background-color: #da2110;
+				}
+			}
+
+			&._3 {
+				bottom: 0px;
+				left: 480px;
+				background-color: #da2110;
+			}
+		}
+
+		.footerAngle {
+			position: absolute;
+			width: 0; 
+			height: 0;
+			border-top: 120px solid;
+			border-left: 120px solid transparent;
+			z-index: 2;
+
+			&._1 {
+				right: 0;
+				border-top-color: #da2110 !important;
+			}
+
+			&._2 {
+				bottom: 0;
+				left: 360px;
+				border-top-color: #fed100 !important;
+			}
+		}
+
+		.footerInfo {
+			position: relative;
+			margin-top: 40px;
+			margin-left: 145px;
+			width: calc(100% - 145px);
+			height: 145px;
+			color: #da2110;
+
+			.footerInfo__item {
+				position: relative;
+				float: left;
+				margin-right: 20px;
+				width: 460px;
+				height: 100%;
+
+				.footerInfo__category {
+					margin-bottom: 25px;
+					width: 100%;
+
+					.footerInfo__socials {
+						float: left;
+						margin-right: 10px;
+						width: 45px;
+						height: 45px;
+						border-radius: 50%;
+						background-color: #da2110;
+						background-size: cover;
+						background-position: center;
+						background-repeat: no-repeat;
+						cursor: pointer;
+						transition: all .3s;
+
+						@mixin socialBgMix($socialBg) {
+							&._#{$socialBg} {
+								background-image: url(#{$socialBgPath}/#{$socialBg}.png);
+							}
+						}
+
+						@include socialBgMix(facebook);
+						@include socialBgMix(twitter);
+						@include socialBgMix(pinterest);
+						@include socialBgMix(inst);
+						@include socialBgMix(google);
+
+						&:hover {
+							background-color: #000;
+						}
+					}
+				}
+
+				.footerInfo__title,
+				.footerInfo__text {
+					font-family: sans-serif;
+					font-size: 20px;
+					font-weight: 900;
+				}
+				.footerInfo__text {
+					font-weight: 100;
+					width: 100%;
+				}
+
+				.footerInfo__form {
+					position: absolute;
+					bottom: 0;
+					width: 100%;
+					height: 25px;
+
+					.footerInfo__input,
+					.footerInfo__sub {
+						float: left;
+						font-family: sans-serif;
+						font-size: 16px;
+						font-weight: 500;
+						color: #da2110;
+						border: 3px solid #da2110;
+						width: 130px;
+						height: 100%;
+						outline: 0;
+						background-color: transparent;
+					}
+
+					.footerInfo__input {
+						border-radius: 0;
+						margin-right: 10px;
+					}
+
+					.formLine {
+						position: absolute;
+						left: -82px;
+						transform-origin: 50% 118px;
+						transform:rotate(45deg);
+						top: -12px;
+						width: 4px;
+						height: 180px;
+						background-color: #da2110;
+					}
+				}
+
+				&._1 {
+					width: 315px;
+				}
+
+				&._2 {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
+
+@import 'footer/mediaFooter1440.scss';
+@import 'footer/mediaFooter1080.scss';
+@import 'footer/mediaFooter730.scss';

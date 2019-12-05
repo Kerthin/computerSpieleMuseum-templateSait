@@ -1,0 +1,61 @@
+@media screen and (max-width: 1440px) and (min-width: 1081px) {
+	.levelHalfCircle {
+		top: 590px;
+		right: -125px;
+		width: 250px;
+		height: 250px;
+	}
+
+	.mounthBlock {
+		.mounthWrap {
+			width: 1060px;
+
+			.present {
+				width: 185px;
+				height: 185px;
+				margin-right: 85px;
+
+				.present__title {
+					bottom: 26px;
+					font-size: 21px;
+				}
+			}
+
+			.mounth {
+				width: 250px;
+				height: 250px;
+				padding: 26px;
+
+				.mounth__letter {
+					font-size: 148px;
+				}
+
+				.mounth__article {
+					width: calc(100% - 52px);
+
+					.mounth__title {
+						margin-bottom: 22px;
+						font-size: 30px;
+					}
+
+					.mounth__paragraph {
+						margin-bottom: 26px;
+						font-size: 16px;
+					}
+
+					.mounth__letterWrap {
+						width: 122px;
+					}
+					.mounth__paragraphWrap {
+						padding-left: 33px;
+						width: calc(100% - 122px);
+					}
+				}
+
+				&._twin {
+					width: calc(250px * 2 + 20px);
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,74 @@
+//- NUMBER MENU CASE
+- var friends = 0
+
+// MENU BLOCK ITEMS
+mixin startMix(startName)
+	.lineStart
+	.menuItem__startBlock
+		p.menuItem__start #{startName}
+mixin triangleMix
+	.triangle
+		.insideTriangle
+mixin crossMix(crossName)
+	.crossTitleWrap
+		h1.crossTitle #{crossName}
+	.cross
+		.cross__line._left
+		.cross__line._right
+mixin calendarMix
+	.calendarioLine
+	.circleCalendarWrap
+		.circle._3
+mixin angleLineMix
+	.angleLine
+mixin centerLineMix
+	.centerLine
+mixin circleCultMix
+	.circleCult
+
+//- NEWS BLOCK ITEMS
+mixin hoverItemMix(hoverBg, hoverText, hoverData)
+	.hoverBlock(class=`_${hoverBg}`)
+		.hoverBlock__info
+			p.hoverBlock__data #{hoverData}
+			p.hoverBlock__text #{hoverText}
+		.hoverBlock__angle
+
+mixin squareBoxMix(nameSquare, colorBg)
+	.news
+		.squareBox(class=`_${colorBg}`)
+			.squareBox__square
+				h1.squareBox__title #{nameSquare}
+mixin angleBoxMix(nameAngle, colorBg)
+	.news
+		.angleBox(class=`_${colorBg}`)
+			.angleBox__angle
+			h1.angleBox__title #{nameAngle}
+mixin circleBoxMix(colorBg)
+	.news
+		.circleBox(class=`_${colorBg}`)
+mixin crossBoxMix(colorBg)
+	.news
+		.crossBox(class=`_${colorBg}`)
+			.crossBox__item._left
+			.crossBox__item._right
+mixin articleBoxMix(colorBg, articleParagraph, nameSquare)
+	.news
+		.articleBox(class=`_${colorBg}`)
+			.articleBox__angle
+			.articleBox__text
+				p.articleBox__more VER MÁS
+				.articleBox__info
+					p.articleBox__title #{nameSquare}
+					p.articleBox__paragraph= articleParagraphArray[`${articleParagraph}`]
+mixin imgBoxMix(imgBg, hoverBg, hoverText, hoverData)
+	.news
+		.imgBox(class=`_${imgBg}`)
+		.hoverBlock(class=`_${hoverBg}`)
+			.hoverBlock__info
+				p.hoverBlock__data #{hoverData}
+				p.hoverBlock__text #{hoverText}
+			.hoverBlock__angle
+
+//- PARAGRAPH ARRAY
+- var articleParagraphArray = ['El museo cuenta con la colección más grande de videojuegos, consolas y revistas especificas y ha realizardo varias exposiciones internacionales desde el año 1997. Podés hacer un recorrido virtual por los 4 hitos de la historia de los videojuegos que abarcan en su totalidad a siete generaciones de evolución gamer.', 'Este mes nos vestimos de gala: inauguramos la muestra "The Art of the Videogames". Una expo con exponentes como Atari, Famicom, Zelda, Final Fantasy, Super Mario Bros y muchos más. Te invitamos a este genial viaje en el tiempo.', 'Play the Game: "40 años de videjuegos" es una exhibición participativa que explora más de 40 años de historia. Ingresá acá para enterarte de éste y todos los eventos especiales preparados para el corriente mes e año.']

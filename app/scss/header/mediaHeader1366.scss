@@ -1,0 +1,21 @@
+@media screen and (max-width: 1366px) {
+	.menu {
+		.menu__item {
+			.menu__description {
+				width: 175px;
+				height: 85px;
+
+				.menu__text {
+					padding-left: 10px;
+
+					.menu__title {
+						font-size: 33px;
+					}
+					.menu__subtitle {
+						font-size: 13px;
+					}
+				}
+			}
+		}
+	}
+}

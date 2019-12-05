@@ -1,0 +1,244 @@
+@media screen and (max-width: 730px) {
+	.container {
+		.firstBlock {
+
+			.circle {
+				width: 110px;
+				height: 110px;
+
+				&._3 {
+					border-color: #fed100;
+					border-bottom-color: transparent;
+					border-right-color: transparent;
+				}
+			}
+
+
+			.wrap {
+				width: 320px;
+				height: 640px;
+
+				.topFigures {
+					display: none;
+				}
+
+				.menuBlocks {
+					height: 600px;
+
+					.menuItem {
+						width: 160px;
+						height: 160px;
+
+						&.item_5 {
+							border: 4px solid;
+						}
+
+						.lineStart {
+							display: none;
+						}
+						.menuItem__startBlock {
+							width: 107px;
+							height: 107px;
+
+							.menuItem__start {
+								font-size: 27px;
+							}
+						}
+
+
+						.triangle {
+							border-left: 80px solid transparent;
+							border-right: 80px solid transparent;
+							border-top: 133px solid #ffffdd;
+
+							.insideTriangle {
+								border-left: 40px solid transparent;
+								border-right: 40px solid transparent;
+								border-top: 67px solid #00ace4;
+							}
+						}
+
+
+						.crossTitleWrap {
+							top: 65px;
+							left: -95px;
+							transform: rotate(-90deg);
+
+							.crossTitle {
+								font-size: 20px;
+							}
+						}
+						.cross {
+							width: 133px;
+							height: 133px;
+
+							.cross__line {
+								top: -10.5px;
+								width: 28px;
+								height: 154px;
+
+								&._left {
+									left: 52.5px;
+								}
+								&._right {
+									right: 52.5px;
+								}
+							}
+						}
+
+
+						.circleCalendarWrap {
+							right: -55px;
+							width: 110px;
+							height: 110px;
+						}
+
+
+						.angleLine {
+							height: 114px;
+						}
+
+
+						.centerLine {
+							height: 80px;
+						}
+
+
+						.circleCult {
+							left: 20px;
+							width: 320px;
+							height: 320px;
+							border: 40px solid #ffffdd;
+						}
+
+
+						.hoverBlock__info {
+							bottom: 13px;
+							left: 20px;
+
+							.hoverBlock__data {
+								font-size: 13px;
+							}
+							.hoverBlock__text {
+								font-size: 23px;
+								line-height: 23px;
+							}
+						}
+						.hoverBlock__angle {
+							border-bottom: 107px solid;
+							border-right: 107px solid transparent;
+						}
+					}
+				}
+
+				.bottomFigures {
+					display: none;
+				}
+			}
+		}
+
+
+		.secondBlock {
+			padding: 50px 0;
+
+			.newsWrap {
+				width: 340px;
+
+				.news {
+					width: 340px;
+					height: 340px;
+
+					.squareBox {
+						.squareBox__square {
+							width: 185px;
+							height: 185px;
+
+							.squareBox__title {
+								font-size: 45px;
+							}
+						}
+					}
+
+
+					.articleBox {
+						width: 100%;
+						height: 100%;
+						border: 5px solid;
+
+						.articleBox__angle {
+							border-top: 22px solid;
+							border-left: 22px solid transparent;
+						}
+						.articleBox__text {
+							padding: 25px;
+
+							.articleBox__more {
+								font-size: 15px;
+							}
+							.articleBox__info {
+								width: calc(100% - 50px);
+								bottom: 25px;
+
+								.articleBox__title {
+									padding: 10px 0;
+									font-size: 45px;
+								}
+								.articleBox__paragraph {
+									font-size: 17px;
+								}
+							}
+						}
+					}
+
+
+					.angleBox {
+						.angleBox__angle {
+							border-top: 340px solid;
+							border-left: 340px solid transparent;
+						}
+						.angleBox__title {
+							font-size: 45px;
+						}
+					}
+
+					.hoverBlock {
+						.hoverBlock__info {
+							bottom: 22px;
+							left: 30px;
+
+							&.hoverBlock__data {
+								font-size: 22px;
+							}
+
+							.hoverBlock__text {
+								font-size: 45px;
+								line-height: 55px;
+							}
+						}
+
+						.hoverBlock__angle {
+							border-bottom: 240px solid;
+							border-right: 240px solid transparent;
+						}
+					}
+
+
+					.crossBox {
+						.crossBox__item {
+							top: -75px;
+							width: 60px;
+							height: 490px;
+
+							&._left {
+								left: 140px;
+							}
+							&._right {
+								right: 140px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

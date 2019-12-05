@@ -1,0 +1,159 @@
+.presentBlock {
+	position: absolute;
+	bottom: 300px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1450px;
+
+	.presentBlock__consols {
+		float: left;
+		padding: 0 40px;
+
+		.presentBlock__consoleBox {
+			position: relative;
+			width: 900px;
+			height: 355px;
+			border: 10px solid #da2110;
+			text-align: center;
+
+			.presentBlock__chose {
+				font-family: 'Basica';
+				font-size: 40px;
+				color: #da2110;
+				line-height: 350px;
+			}
+		}
+
+		@import 'atari.scss';
+		@import 'nintendo.scss';
+		@import 'g7.scss';
+		@import 'xbox.scss';
+		@import 'sNintendo.scss';
+	}
+
+	.presentBlock__menu {
+		float: left;
+		margin-top: 45px;
+		width: 470px;
+		height: 310px;
+
+		.presentBlock__menuItem {
+			position: relative;
+			width: 150px;
+			height: 150px;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			cursor: pointer;
+			overflow: hidden;
+
+			.presentBlock__angle {
+				position: absolute;
+				bottom: 0;
+				border-top: 150px solid #da2110;
+				border-left: 150px solid transparent;
+			}
+
+			.hoverBlock {
+				background-color: #da2110;
+
+				.hoverBlock__info {
+					bottom: 110px;
+					left: 15px;
+
+					.hoverBlock__text {
+						font-size: 25px;
+						line-height: 25px;
+					}
+				}
+				.hoverBlock__about {
+					bottom: 10px;
+					left: 15px;
+
+					.hoverBlock__description {
+						font-size: 12px;
+					}
+				}
+			}
+
+			.presentBlock__crossItem {
+				position: absolute;
+				top: -35px;
+				width: 30px;
+				height: 220px;
+				background-color: #da2110;
+
+				&:nth-child(1) {
+					left: 60px;
+					transform: rotate(45deg);
+				}
+				&:nth-child(2) {
+					right: 60px;
+					transform: rotate(-45deg);
+				}
+			}
+
+			&._mt10 {
+				margin-top: 10px;
+			}
+			&._mr10 {
+				margin-right: 10px;
+			}
+			&._w310 {
+				width: 310px;
+			}
+
+			@mixin menuItemBgMix($menuItemBg) {
+				&._#{$menuItemBg} {
+					background-image: url(#{$menuItemBgPath}/#{$menuItemBg}.jpg);
+				}
+			}
+
+			@include menuItemBgMix(pacman);
+			@include menuItemBgMix(boom);
+			@include menuItemBgMix(space);
+
+			&:hover {
+				.hoverBlock {
+					height: 100%;
+				}
+			}
+		}
+	}
+
+	@mixin consoleChoseNameMix($consoleChoseName, $consoleName) {
+		&.#{$consoleChoseName} {
+			.presentBlock__consols {
+				.presentBlock__consoleBox {
+					display: none;
+				}
+
+				.#{$consoleName} {
+					display: block;
+				}
+			}
+		}
+	}
+
+	@include consoleChoseNameMix(atariChose, atari);
+	@include consoleChoseNameMix(nuntendoChose, nintendo);
+	@include consoleChoseNameMix(snintendoChose, super);
+	@include consoleChoseNameMix(psOneChose, g7);
+	@include consoleChoseNameMix(xboxOneChose, xbox);
+
+	@mixin consoleChoseMarginMix($consoleChoseMargin) {
+		&.#{$consoleChoseMargin} {
+			.presentBlock__menu {
+				margin-top: 0;
+			}
+		}
+	}
+
+	@include consoleChoseMarginMix(nuntendoChose);
+	@include consoleChoseMarginMix(psOneChose);
+	@include consoleChoseMarginMix(xboxOneChose);
+
+	&.psOneChose {
+		width: 1586px;
+	}
+}

@@ -1,0 +1,243 @@
+.menuBlocks {
+	position: relative;
+	width: 100%;
+	height: 480px;
+
+	.menuItem {
+		display: block;
+		float: left;
+		position: relative;
+		width: 240px;
+		height: 240px;
+		cursor: pointer;
+		z-index: 2;
+
+		&.item_1 {
+			background-color: #da2110;
+		}
+
+		&.item_2 {
+			background-color: #00ace4;
+		}
+
+		&.item_3 {
+			background-color: #000;
+		}
+
+		&.item_4 {
+			background-color: #da2110;
+		}
+
+		&.item_6 {
+			background-color: #fed100;
+			overflow: hidden;
+		}
+
+		&.item_8 {
+			background-color: #fed100;
+			overflow: hidden;
+		}
+
+		@mixin itemHoverBgMix($hoverBg, $angleColor) {
+			._#{$hoverBg} {
+				background-image: url(#{$hoverBgPathDesktop}/#{$hoverBg}.jpg);
+
+				.hoverBlock__angle {
+					border-bottom-color: #{$angleColor};
+				}
+
+				@media screen and (max-width: 1440px) {
+					background-image: url(#{$hoverBgPathLaptop}/#{$hoverBg}.jpg);
+				}
+
+				@media screen and (max-width: 1080px) {
+					background-image: url(#{$hoverBgPathTablet}/#{$hoverBg}.jpg);
+				}
+
+				@media screen and (max-width: 730px) {
+					background-image: url(#{$hoverBgPathPhone}/#{$hoverBg}.jpg);
+				}
+			}
+		}
+
+		
+		@include itemHoverBgMix(nesClassic, $nesClassicAngleColor);
+		@include itemHoverBgMix(zelda, $zeldaAngleColor);
+		@include itemHoverBgMix(sobre, $sobreAngleColor);
+		@include itemHoverBgMix(atariNeon, $atariNeonAngleColor);
+		@include itemHoverBgMix(cartridge, $cartridgeAngleColor);
+		@include itemHoverBgMix(gamepad, $gamepadAngleColor);
+		@include itemHoverBgMix(hero, $heroAngleColor);
+		@include itemHoverBgMix(duke, $dukeAngleColor);
+
+
+		.lineStart {
+			position: absolute;
+			left: -80px;
+			transform-origin: 50% 118px;
+			transform:rotate(45deg);
+			top: 200px;
+			width: 4px;
+			height: 350px;
+			background-color: #da2110;
+		}
+		.menuItem__startBlock {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateY(-50%) translateX(-50%);
+			width: 160px;
+			height: 160px;
+			text-align: center;
+			padding-top: 5px;
+			background-color: #ffffdd;
+
+			.menuItem__start {
+				font-family: sans-serif;
+				font-size: 40px;
+				font-weight: 900;
+				color: #da2110;
+			}
+		}
+
+
+		.triangle {
+			position: relative;
+			width: 100px;
+			height: 100px;
+			border-left: 120px solid transparent;
+			border-right: 120px solid transparent;
+			border-top: 200px solid #ffffdd;
+
+			.insideTriangle {
+				transform: translateY(-165%) translateX(-50%);
+				width: 10px;
+				height: 10px;
+				border-left: 60px solid transparent;
+				border-right: 60px solid transparent;
+				border-top: 100px solid #00ace4;
+			}
+		}
+
+
+		.crossTitleWrap {
+			position: absolute;
+			top: -56px;
+			padding: 5px;
+			width: 100%;
+
+			.crossTitle {
+				font-family: sans-serif;
+				font-size: 40px;
+				font-weight: 900;
+				text-align: center;
+				color: #000;
+			}
+		}
+
+		.cross {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateY(-50%) translateX(-50%);
+			width: 200px;
+			height: 200px;
+
+			.cross__line {
+				position: absolute;
+				top: -15px;
+				width: 42px;
+				height: 230px;
+				background-color: #ffffdd;
+
+				&._left {
+					left: 79px;
+					transform: rotate(45deg);
+				}
+
+				&._right {
+					right: 79px;
+					transform: rotate(-45deg);
+				}
+			}
+		}
+
+
+		.calendarioLine {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translateY(-50%);
+			width: 65%;
+			height: 2px;
+			background-color: #fed100;
+		}
+		.circleCalendarWrap {
+			position: absolute;
+			top: 50%;
+			right: -82.5px;
+			transform: translateY(-50%);
+			width: 165px;
+			height: 165px;
+		}
+
+
+		.angleLine {
+			position: absolute;
+			left: 81px;
+			transform-origin: 40% 118px;
+			transform:rotate(-45deg);
+			top: -35px;
+			width: 4px;
+			height: 170px;
+			background-color: #00ace4;
+		}
+
+
+		.centerLine {
+			margin: 0 auto;
+			width: 4px;
+			height: 120px;
+			background-color: #000;
+		}
+
+
+		.circleCult {
+			position: absolute;
+			left: 40px;
+			width: 480px;
+			height: 480px;
+			border-radius: 50%;
+			border: 60px solid #ffffdd;
+			border-top-color: transparent;
+			border-bottom-color: transparent;
+			border-right-color: transparent;
+			transform: rotate(45deg);
+		}
+
+
+		.hoverBlock__info {
+			bottom: 20px;
+			left: 30px;
+
+			.hoverBlock__data {
+				font-size: 20px;
+			}
+			.hoverBlock__text {
+				font-size: 35px;
+				line-height: 34px;
+			}
+		}
+		.hoverBlock__angle {
+			border-bottom: 160px solid;
+			border-right: 160px solid transparent;
+		}
+
+
+		&:hover {
+			.hoverBlock {
+				height: 100%;
+			}
+		}
+	}
+}

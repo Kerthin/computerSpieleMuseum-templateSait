@@ -1,0 +1,31 @@
+@media screen and (max-width: 940px) {
+	.startBlock {
+		.presentBlock {
+			width: 740px;
+
+			.presentBlock__consols {
+				padding: 0 20px;
+
+				.presentBlock__consoleBox {
+					width: 700px;
+
+					.presentBlock__chose {
+						font-size: 30px;
+					}
+				}
+
+				.atari,
+				.nintendo,
+				.g7,
+				.super,
+				.xbox {
+					width: 700px;
+				}
+			}
+
+			&.psOneChose {
+				width: 740px;
+			}
+		}
+	}
+}

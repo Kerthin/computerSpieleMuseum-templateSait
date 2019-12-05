@@ -1,0 +1,160 @@
+.nintendo {
+	display: none;
+	position: relative;
+	width: 900px;
+	height: 314px;
+	overflow: hidden;
+
+	.nintendo__housing {
+		position: absolute;
+		width: 100%;
+		height: 206px;
+		border: 10px solid #da2110;
+		border-bottom: 0;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		background-color: #ffffdd;
+
+		.nintendo__housingPanel {
+			position: absolute;
+			width: calc(100% - 258px);
+			height: 100%;
+
+			.nintendo__scheme {
+				position: absolute;
+				right: 0;
+				width: calc(100% - 100px);
+				border-left: 10px solid #da2110;
+				border-bottom: 10px solid #da2110;
+				border-bottom-left-radius: 5px;
+				background-color: #fed100;
+
+				.nintendo__stripeWrap {
+					width: 100%;
+					height: 10px;
+				}
+			}
+		}
+		.nintendo__radiator {
+			position: absolute;
+			right: 94px;
+			width: 164px;
+			height: calc(100% + 98px);
+			border-left: 10px solid #da2110;
+			border-right: 10px solid #da2110;
+			z-index: 1;
+
+			.nintendo__grid {
+				margin-left: 20.8px;
+				width: 10px;
+				height: 100%;
+				background-color: #da2110;
+			}
+		}
+		.nintendo__rightPanel {
+			position: absolute;
+			right: 0;
+			width: 94px;
+			height: 100%;
+		}
+	}
+
+	.nintendo__trapeze {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: calc(100% + 10px); 
+		border-top: 108px solid #da2110;
+		border-left: 104px solid transparent;
+		border-right: 104px solid transparent;
+
+		.nintendo__trapezeInside {
+			position: absolute;
+			bottom: 10px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: calc(100% + 178px); 
+			border-top: 98px solid #ffffdd;
+			border-left: 94px solid transparent;
+			border-right: 94px solid transparent;
+
+			.nintendo__trapezePanel {
+				position: absolute;
+				bottom: 0;
+				left: -94px;
+				width: calc(100% - 70px);
+				height: 98px;
+
+				.nintendo__controls {
+					position: absolute;
+					top: 30px;
+					right: 0;
+					width: calc(100% - 100px);
+					border-bottom-left-radius: 5px;
+
+					.nintendo__power {
+						width: 50px;
+						height: 50px;
+						border: 10px solid #da2110;
+						border-radius: 5px;
+						background-color: #fed100;
+					}
+					.nintendo__control {
+						width: 93px;
+						height: 55px;
+						border: 10px solid #da2110;
+						border-radius: 5px;
+						background-color: #fed100;
+
+						.nintendo__contact {
+							margin-top: 12.5px;
+							width: 60%;
+							height: 10px;
+							background-color: #da2110;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.nintendo__lattice {
+	position: absolute;
+}
+.nintendo__stripe {
+	height: 10px;
+	background-color: #da2110;
+}
+.nintendo__line {
+	margin-top: 168px;
+	width: 100%;
+	height: 10px;
+	background-color: #fed100;
+}
+._sm {
+	width: 28px;
+}
+._md {
+	width: 56px;
+}
+._lg {
+	width: 112px;
+}
+._mgt {
+	margin-top: 20px;
+}
+._mgb {
+	margin-bottom: 20px;
+}
+._mgr {
+	margin-right: 20px;
+}
+._fl {
+	float: left;
+}
+._r {
+	position: absolute;
+	right: 0;
+}

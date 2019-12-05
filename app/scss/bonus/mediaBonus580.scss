@@ -1,0 +1,71 @@
+@media screen and (max-width: 580px) {
+	.artBlock {
+		.artWrap {
+			width: 360px;
+
+			.artNews {
+				width: 100%;
+				height: 650px;
+				margin-left: 0px;
+				margin-right: 0px;
+
+				.artNews__dateBox {
+					height: 56px;
+					padding-top: 10px;
+
+					.artNews__date {
+						font-size: 30px;
+					}
+				}
+				.artNews__img {
+					height: 197px;
+				}
+				.artNews__about {
+					height: 392px;
+
+					.artNews__article {
+						padding: 10px 0;
+
+						.artNews__title {
+							font-size: 34px;
+							margin-bottom: 10px;
+						}
+						.artNews__paragraph {
+							word-spacing: 3px;
+							font-size: 14px;
+						}
+					}
+					.artNews__buttonWrap {
+						.artNews__button {
+							font-size: 14px;
+						}
+					}
+				}
+
+				&:nth-child(3n-2) {
+					width: 100%;
+
+					.artNews__img {
+						height: calc(100% - 56px);
+					}
+
+					.artNews__angle {
+						border-bottom: 335px solid #00ace4;
+						border-right: 335px solid transparent;
+					}
+					.artNews__about {
+						.artNews__article {
+							width: 100%;
+							padding: 30px;
+
+							.artNews__title {
+								font-size: 50px;
+								line-height: 50px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

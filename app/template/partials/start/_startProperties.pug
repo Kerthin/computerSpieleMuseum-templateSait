@@ -1,0 +1,28 @@
+//- NUMBER MENU CASE
+- var friends = 2
+
+//- HOVER ITEM MIX
+mixin hoverItemMix(hoverText, articleDescription)
+	.hoverBlock
+		.hoverBlock__info
+			p.hoverBlock__text #{hoverText}
+		.hoverBlock__about
+			p.hoverBlock__description= articleDescriptionArray[`${articleDescription}`]
+
+//- GENERATION ITEM
+mixin generationItemMix(consoleClassName, otherConsole1, otherConsole2, consoleName, consoleGeneration, generationYear)
+	.generation(class=`${consoleClassName}Chose`)
+		.minCircle
+		.consols
+			.consols__little
+				p.consols__littleName #{otherConsole1}
+				p.consols__littleName #{otherConsole2}
+			.consols__main
+				h1.consols__mainName #{consoleName}
+		.numberGen
+			p.numberGen__text #{consoleGeneration} GENERACIÓN
+		.yearGen
+			.yearGen__text #{generationYear}
+
+//- DESCRIPTION ARRAY
+- var articleDescriptionArray = ['Pac-Man es un videojuego arcade creado por el diseñador de videojuegos Toru Iwatani.', 'Kaboom! es un videojuego de Activision, ideado por Larry Kaplan en 1981, para la consola Atari 2600.', 'Atari, Inc. es una de las productoras de videojuegos independientes más grande en Estados Unidos. Es propiedad de Infogrames Entertainment S.A.']

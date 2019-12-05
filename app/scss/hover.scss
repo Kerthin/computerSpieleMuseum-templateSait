@@ -1,0 +1,28 @@
+.hoverBlock {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	height: 0%;
+	transition: all .3s;
+	overflow: hidden;
+
+	.hoverBlock__angle {
+		position: absolute;
+		bottom: 0;
+		width: 0;
+	}
+
+	.hoverBlock__info,
+	.hoverBlock__about {
+		position: absolute;
+		z-index: 2;
+	}
+
+	.hoverBlock__data,
+	.hoverBlock__text,
+	.hoverBlock__description {
+		font-family: sans-serif;
+		font-weight: 900;
+		color: #fff;
+	}
+}

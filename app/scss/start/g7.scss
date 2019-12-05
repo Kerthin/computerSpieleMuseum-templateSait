@@ -1,0 +1,158 @@
+.g7 {
+	display: none;
+	position: relative;
+	width: 1036px;
+	height: 310px;
+
+	.ps {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 560px;
+		height: 296px;
+		border: 10px solid #da2110;
+		border-radius: 5px;
+
+		.ps__floppy {
+			width: 100%;
+			height: 60px;
+			border-bottom: 10px solid #da2110;
+			background-color: #fed100;
+		}
+		.ps__controlPanel {
+			position: relative;
+			width: 100%;
+			height: 216px;
+			background-color: #ffffdd;
+
+			.ps__section {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 180px;
+				height: 155px;
+
+				.ps__namePart {
+					margin: 0 auto;
+					width: 168px;
+					height: 10px;
+					background-color: #da2110;
+				}
+				.ps__control {
+					position: absolute;
+					bottom: 0;
+					width: 100%;
+					height: 108px;
+					border: 10px solid #da2110;
+					border-radius: 5px;
+					background-color: #ffffdd;
+
+					.ps_memory {
+						width: 100%;
+						height: 30px;
+						border-bottom: 10px solid #da2110;
+					}
+					.ps_contacts {
+						position: relative;
+						width: 100%;
+						height: 58px;
+						background-color: #fed100;
+
+						.ps_contactLine {
+							position: absolute;
+							top: 50%;
+							transform: translateY(-50%);
+							width: 100%;
+
+							.ps_contact {
+								float: left;
+								margin: 0 6.5px;
+								width: 40px;
+								height: 10px;
+								background-color: #da2110;
+							}
+						}
+					}
+				}
+
+				&:nth-child(1) {
+					left: 63px;
+				}
+				&:nth-child(2) {
+					right: 63px;
+				}
+			}
+		}
+	}
+	.psBlock {
+		position: absolute;
+		width: 295px;
+		height: 270px;
+		bottom: 0;
+
+		.psBlock__housing {
+			position: absolute;
+			width: 266px;
+			height: 232px;
+			border: 10px solid #da2110;
+			border-radius: 5px;
+			background-color: #ffffdd;
+
+			.psBlock__tongue {
+				position: absolute;
+				top: -5px;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 57px;
+				height: 76px;
+				border: 10px solid #da2110;
+				border-top: 0;
+				border-radius: 5px;
+			}
+			.psBlock__side {
+				position: absolute;
+				top: 50%;
+				right: -39px;
+				transform: translateY(-50%);
+				width: 29px;
+				height: 190px;
+				border: 10px solid #da2110;
+				border-left: 0;
+				border-top-right-radius: 5px;
+				border-bottom-right-radius: 5px;
+				background-color: #ffffdd;
+
+				&._yellow {
+					background-color: #fed100;
+				}
+			}
+			.psBlock__lower {
+				position: absolute;
+				width: 100%;
+				height: 38px;
+				border: 10px solid #da2110;
+				border-top: 0;
+				border-bottom-left-radius: 5px;
+				border-bottom-right-radius: 5px;
+				bottom: -48px;
+				background-color: #ffffdd;
+			}
+
+			&._r {
+				.psBlock__side {
+					border-left: 10px solid #da2110;
+					border-right: 0;
+					border-top-left-radius: 5px;
+					border-bottom-left-radius: 5px;
+					border-top-right-radius: 0;
+					border-bottom-right-radius: 0;
+					left: -39px;
+				}
+			}
+
+			&._yellow {
+				background-color: #fed100;
+			}
+		}
+	}
+}

@@ -1,0 +1,148 @@
+.artBlock {
+	position: relative;
+	padding: 50px 0 100px;
+	width: 100%;
+	background-color: #ffffdd;
+	overflow: hidden;
+
+	.artWrap {
+		position: relative;
+		margin: 0 auto;
+		width: 1420px;
+
+		.artNews {
+			position: relative;
+			display: block;
+			float: left;
+			margin-bottom: 20px;
+			margin-right: 20px;
+			width: 408px;
+			height: 768px;
+			border-top: 5px solid #000;
+			background-color: #ffffdd;
+			cursor: pointer;
+			overflow: hidden;
+
+			.artNews__dateBox {
+				width: 100%;
+				height: 66px;
+				padding-top: 12px;
+
+				.artNews__date {
+					font-family: sans-serif;
+					font-size: 35px;
+					font-weight: 900;
+				}
+			}
+			.artNews__img {
+				width: 100%;
+				height: 232px;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+
+				@mixin artBgMix($artBg) {
+					&._#{$artBg} {
+						background-image: url(#{$artBgPath}/#{$artBg}.jpg);
+					}
+				}
+
+				@include artBgMix(valley);
+				@include artBgMix(ff);
+				@include artBgMix(zelda);
+				@include artBgMix(slots);
+				@include artBgMix(lorna);
+				@include artBgMix(mario);
+			}
+			.artNews__about {
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				height: 465px;
+
+				.artNews__article {
+					position: relative;
+					padding: 12px 0;
+					width: 100%;
+					height: 50%;
+
+					.artNews__title {
+						font-family: sans-serif;
+						font-size: 40px;
+						font-weight: 900;
+						margin-bottom: 12px;
+					}
+					.artNews__paragraph {
+						font-family: sans-serif;
+						word-spacing: 3px;
+					}
+				}
+				.artNews__buttonWrap {
+					position: relative;
+					width: 100%;
+					height: 50%;
+
+					.artNews__button {
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+						padding: 3px;
+						border: 3px solid #da2110;
+						outline: none;
+						font-family: sans-serif;
+						font-size: 17px;
+						color: #da2110;
+						cursor: pointer;
+						background-color: #ffffdd;
+						transition: all .3s;
+
+						&:hover {
+							background-color: #da2110;
+							color: #ffffdd;
+						}
+					}
+				}
+			}
+
+			&:nth-child(3n) {
+				margin-right: 0;
+			}
+
+			&:nth-child(3n-2) {
+				width: 564px;
+
+				.artNews__img {
+					height: calc(100% - 66px);
+				}
+				.artNews__angle {
+					position: absolute;
+					bottom: 0;
+					border-bottom: 454px solid #00ace4;
+					border-right: 454px solid transparent;
+				}
+				.artNews__about,
+				.artNews__article {
+					height: auto;
+				}
+				.artNews__about {
+					.artNews__article {
+						width: 85%;
+						padding: 35px;
+						color: #ffffdd;
+
+						.artNews__title {
+							font-size: 70px;
+							line-height: 70px;
+						}
+						.artNews__paragraph {
+							text-align: justify;
+						}
+					}
+					.artNews__buttonWrap {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

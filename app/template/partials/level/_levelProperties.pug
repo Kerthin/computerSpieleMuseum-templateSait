@@ -1,0 +1,40 @@
+//- NUMBER MENU CASE
+- var friends = 3
+
+// MOUNTH ITEM
+mixin halfMounthMix(nameMounth, colorBg, marginRight)
+	.mounth(class=`_mr${marginRight}`)
+		.mounth__half(class=`_bg${colorBg}`)
+		.hoverBlock
+		.mounth__article
+			h1.mounth__title #{nameMounth}
+mixin letterMounthMix(letterMounth, colorLetter, colorBg, marginRight)
+	.mounth(class=`_mr${marginRight} _bg${colorBg}`)
+		.mounth__letter(class=`_${colorLetter}`) #{letterMounth}
+		.hoverBlock
+mixin twinMounthMix(letterMounth, colorLetter, colorBg, paragraphMounth, visibleTitle, titleMounth, marginRight)
+	.mounth._twin(class=`_mr${marginRight} _bg${colorBg}`)
+		.hoverBlock
+		.mounth__article._hvMid._clearfix
+			.mounth__letterWrap
+				.mounth__letter(class=`_${colorLetter}`) #{letterMounth}
+			.mounth__paragraphWrap
+				h1.mounth__title(class=`_${visibleTitle}`) #{titleMounth}
+				p.mounth__paragraph= paragraphTwinArray[`${paragraphMounth}`]
+mixin circleMounthMix(letterMounth, colorLetter, colorBg, sideFigures, colorFigures, marginRight)
+	.mounth(class=`_mr${marginRight} _bg${colorBg}`)
+		.mounth__letter(class=`_${colorLetter}`) #{letterMounth}
+		.hoverBlock
+		.circleWrap._t50(class=`_${sideFigures}Out`)
+			.circle._3._bBlack(class=`_b${colorFigures}`)
+		.hLine._t50._bgBlack(class=`_${sideFigures} _bg${colorFigures}`)
+mixin articleMounthMix(nameMounth, colorBg, paragraphMounth, marginRight)
+	.mounth(class=`_mr${marginRight} _bg${colorBg}`)
+		.hoverBlock
+		.mounth__article
+			h1.mounth__title #{nameMounth}
+			p.mounth__paragraph= paragraphArticleArray[`${paragraphMounth}`]
+
+// PARAGRAPH ARRAY
+- var paragraphTwinArray = ["El 5 de Septiembre de 2017 se celebrará, el campeonato mundial de Atari, el ganador sera coronado y premiado por el mismisimo Toru Iwatani como el primer y único campeón mundial de Atari.", "Encuentro de desarrolladores que tlene como propósito la creación de uno o más juegos en un corto perlodo de tiempo."]
+- var paragraphArticleArray = ["CRAS es una asociación formada por un grupo de arqueólogos interesados en estudiar la visión de la arqueologia en otros ambitos extra arqueologicos.", "Videogames Art Toys, colecctiones de figuras de acción, maquetas, automóies de peliculas, figuras en tamanō natural del genero fantástico, etc."]

@@ -1,0 +1,31 @@
+@media screen and (max-width: 730px) {
+	.levelHalfCircle {
+		display: none;
+	}
+
+	.mounthBlock {
+		.mounthWrap {
+			width: 340px;
+
+			.present {
+				margin: 0 0 110px 45px;
+			}
+
+			.mounth {
+				.mounth__article {
+					.mounth__letterWrap {
+						height: 100%;
+						width: 100%;
+					}
+					.mounth__paragraphWrap {
+						display: none;
+					}
+				}
+
+				&._twin {
+					width: calc(170px * 2);
+				}
+			}
+		}
+	}
+}

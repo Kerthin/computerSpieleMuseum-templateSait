@@ -1,0 +1,80 @@
+@media screen and (max-width: 1366px) {
+	.startBlock {
+		.presentBlock {
+			bottom: 220px;
+		}
+		.wrapGen {
+			bottom: 30px;
+			width: 875px;
+
+			.generation {
+				margin: 10px;
+				width: 155px;
+				height: 116px;
+
+				.minCircle {
+					top: -40px;
+					left: -40px;
+					width: 80px;
+					height: 80px;
+					border: 13px solid #da2110;
+					border-bottom-color: transparent;
+					border-right-color: transparent;
+				}
+				.consols {
+					height: 56px;
+
+					.consols__little {
+						height: 25px;
+
+						.consols__littleName {
+							font-size: 11px;
+							line-height: 11px;
+						}
+					}
+					.consols__main {
+						bottom: 4px;
+						padding: 0 3px;
+						height: 25px;
+						border: 3px solid #fed100;
+
+						.consols__mainName {
+							font-size: 16px;
+							line-height: 21px;
+						}
+					}
+				}
+				.numberGen {
+					padding-left: 10px;
+					height: 21px;
+
+					.numberGen__text {
+						font-size: 12px;
+						line-height: 22px;
+					}
+				}
+				.yearGen {
+					height: 39px;
+
+					.yearGen__text {
+						bottom: 3px;
+						font-size: 21px;
+					}
+				}
+
+				&.active {
+					.consols {
+						.consols__little {
+							bottom: 4px;
+						}
+						.consols__main {
+							.consols__mainName {
+								font-size: 23px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

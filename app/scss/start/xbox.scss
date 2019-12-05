@@ -1,0 +1,127 @@
+.xbox {
+	display: none;
+	position: relative;
+	width: 900px;
+	height: 300px;
+
+	.xbox__housing {
+		position: relative;
+		width: 100%;
+		height: 240px;
+		border: 10px solid #da2110;
+		border-radius: 5px;
+		background-color: #ffffdd;
+
+		.xbox__drive {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 49%;
+			height: 30px;
+			background-color: #da2110;
+		}
+		.xbox__enclosure {
+			position: absolute;
+			right: 0;
+			width: 50%;
+			height: 100%;
+			background: radial-gradient(#da2110 1px, #ffffdd 1px);
+			background-size: 9px 9px, 9px 9px,100% 6px, 9px 9px, 9px 9px;
+
+			.xbox__driveButtonWrap {
+				position: absolute;
+				top: 50%;
+				left: 35px;
+				transform: translateY(-50%);
+				width: 30px;
+				height: 30px;
+				background-color: #ffffdd;
+
+				.xbox__driveButton {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translateY(-50%) translateX(-50%);
+					border-radius: 50%;
+					border: 3px solid #da2110;
+					width: 25px;
+					height: 25px;
+					background-color: #ffffdd;
+				}
+			}
+			.xbox__emblemWrap {
+				position: absolute;
+				top: 50%;
+				right: 80px;
+				transform: translateY(-50%);
+				width: 55px;
+				height: 55px;
+				background-color: #ffffdd;
+
+				.xbox__emblem {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translateY(-50%) translateX(-50%);
+					width: 50px;
+					height: 50px;
+					border-radius: 50%;
+					overflow: hidden;
+					background-size: cover;
+					background-position: center;
+					background-repeat: no-repeat;
+					background-image: url('../image/startImage/xboxEmblem.png');
+				}
+			}
+		}
+	}
+
+	.xbox__stand {
+		position: relative;
+		margin: 0 auto;
+		width: calc(100% - 40px);
+		height: 60px;
+		border: 10px solid #da2110;
+		border-top: 0;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		background-color: #fed100;
+
+		.xbox__usb {
+			position: absolute;
+			top: 50%;
+			left: 50px;
+			transform: translateY(-50%);
+			width: 50px;
+			height: 30px;
+			border: 5px solid #da2110;
+
+			.xbox__contact {
+				margin: 3px auto;
+				width: calc(100% - 4px);
+				height: 5px;
+				background-color: #da2110;
+			}
+		}
+		.xbox__button {
+			position: absolute;
+			top: 50%;
+			right: 135px;
+			transform: translateY(-50%);
+			border-radius: 50%;
+			border: 3px solid #da2110;
+			width: 25px;
+			height: 25px;
+		}
+		.xbox__blaster {
+			position: absolute;
+			top: 50%;
+			right: 40px;
+			transform: translateY(-50%);
+			border-radius: 30px;
+			width: 70px;
+			height: 40px;
+			border: 5px solid #da2110;
+		}
+	}
+}

@@ -1,0 +1,163 @@
+@media screen and (max-width: 1440px) and (min-width: 1081px) {
+	.artBlock {
+		.artWrap {
+			width: 1060px;
+
+			.artNews {
+				width: 302px;
+				height: 568px;
+
+				.artNews__dateBox {
+					height: 49px;
+					padding-top: 9px;
+
+					.artNews__date {
+						font-size: 26px;
+					}
+				}
+				.artNews__img {
+					height: 172px;
+				}
+				.artNews__about {
+					height: 342px;
+
+					.artNews__article {
+						padding: 9px 0;
+
+						.artNews__title {
+							font-size: 30px;
+							margin-bottom: 9px;
+						}
+						.artNews__paragraph {
+							word-spacing: 3px;
+							font-size: 12px;
+						}
+					}
+					.artNews__buttonWrap {
+						.artNews__button {
+							font-size: 13px;
+						}
+					}
+				}
+
+				&:nth-child(3n-2) {
+					width: 416px;
+
+					.artNews__img {
+						height: calc(100% - 49px);
+					}
+
+					.artNews__angle {
+						border-bottom: 336px solid #00ace4;
+						border-right: 336px solid transparent;
+					}
+					.artNews__about {
+						.artNews__article {
+							padding: 26px;
+
+							.artNews__title {
+								font-size: 52px;
+								line-height: 52px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/* Exhib Block */
+	.exhibBlock {
+		.breveWrap {
+			width: 1060px;
+
+			.breveBox {
+				width: 520px;
+
+				.breveTitle {
+					width: 250px;
+
+					.breveTitle__text {
+						margin-bottom: -10px;
+						font-size: 44px;
+						letter-spacing: 3px;
+					}
+				}
+				.breveMounth {
+					padding: 4px 7px 0;
+					width: 250px;
+
+					.breveMounth__text {
+						font-size: 26px;
+					}
+				}
+			}
+		}
+
+		.exhibWrap {
+			width: 1060px;
+
+			.exhibNews {
+				width: 250px;
+				height: 280px;
+
+				.exhibNews__article {
+					padding-top: 9px;
+					height: 96px;
+
+					.exhibNews__title,
+					.exhibNews__date {
+						font-size: 21px;
+						line-height: 26px;
+					}
+				}
+
+				.exhibNews__img {
+					height: calc(100% - 96px);
+				}
+
+				.exhibNews__triangle {
+					border-left: 110px solid transparent;
+					border-right: 110px solid transparent;
+					border-bottom: 185px solid;
+
+					.exhibNews__insideTriangle {
+						top: 80px;
+						border-left: 41px solid transparent;
+						border-right: 41px solid transparent;
+						border-bottom: 67px solid #ffffdd;
+					}
+				}
+
+				.exhibNews__circle {
+					width: 211px;
+					height: 211px;
+					border: 40px solid;
+				}
+
+				.exhibNews__cross {
+					width: 192px;
+					height: 192px;
+
+					.exhibNews__crossItem {
+						top: -16px;
+						height: 226px;
+
+						&:first-child {
+							left: 76px;
+						}
+						&:last-child {
+							right: 76px;
+						}
+					}
+				}
+
+				.exhibNews__square {
+					width: 192px;
+					height: 192px;
+					border: 40px solid;
+				}
+			}
+		}
+	}
+}

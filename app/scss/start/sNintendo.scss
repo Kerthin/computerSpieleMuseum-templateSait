@@ -1,0 +1,210 @@
+.super {
+	display: none;
+	position: relative;
+	width: 900px;
+	height: 355px;
+
+	.super__receiver {
+		position: absolute;
+		left: 50%;
+		transform:translateX(-50%);
+		width: calc(100% - 400px);
+		height: 108px;
+		border: 10px solid #da2110;
+		background-color: #fed100;
+		z-index: 3;
+
+		.super__sideBlock {
+			position: absolute;
+			width: 100px;
+			height: 100%;
+
+			.super__latticeSide {
+				position: absolute;
+				top: 10px;
+				width: 22px;
+				height: 53px;
+				background-image: repeating-linear-gradient(0deg, #da2110, #da2110 5px, transparent 5px, transparent 12px);
+			}
+
+			&:nth-child(1) {
+				border-right: 5px solid #da2110;
+			}
+			&:nth-child(2) {
+				right: 0;
+				border-left: 5px solid #da2110;
+			}
+		}
+		.super__connector {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform:translateX(-50%);
+			width: calc(100% - 100px);
+			height: 60px;
+			border: 10px solid #da2110;
+			border-bottom: 0;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+			background-color: #ffffdd;
+		}
+	}
+	.super__panel {
+		position: absolute;
+		top: 38px;
+		left: 50%;
+		transform:translateX(-50%);
+		width: calc(100% - 100px);
+		height: 100px;
+		border: 10px solid #da2110;
+		background-color: #ffffdd;
+		z-index: 2;
+
+		.super__toggleWrap {
+			position: absolute;
+			top: 18px;
+			width: 55px;
+			height: 55px;
+			border-radius: 5px;
+			border: 10px solid #da2110;
+			background-color: #fed100;
+
+			&:nth-child(1) {
+				left: 30px;
+			}
+			&:nth-child(2) {
+				right: 30px;
+			}
+		}
+	}
+	.super__housing {
+		position: absolute;
+		bottom: 43px;
+		width: 100%;
+		height: 240px;
+		border: 10px solid #da2110;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		background-color: #ffffdd;
+
+		.super__present {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			width: calc(100% - 300px);
+			height: 54px;
+			bottom: 110px;
+			border-left: 10px solid #da2110;
+			border-right: 10px solid #da2110;
+
+			.super__diode {
+				position: absolute;
+				top: 50%;
+				right: 40px;
+				transform: translateY(-50%);
+				width: 40px;
+				height: 20px;
+				border-radius: 20px;
+				border: 5px solid #da2110;
+				background-color: #fed100;
+			}
+		}
+		.super__controlPanel {
+			position: absolute;
+			bottom: 0px;
+			width: 100%;
+			height: 110px;
+			border-top: 10px solid #da2110;
+			background-color: #ffffdd;
+
+			.super__line {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 100%;
+				height: 5px;
+				background-color: #da2110;
+			}
+			.super__controls {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translateY(-50%) translateX(-50%);
+				width: calc(100% - 200px);
+				height: calc(100% - 20px);
+				border-radius: 40px;
+				border: 5px solid #da2110;
+				background-color: #ffffdd;
+
+				.super__control {
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					padding: 5px;
+					border: 5px solid #da2110;
+
+					.super__contact {
+						margin: 0 1px;
+						padding: 1px;
+						border: 5px solid #da2110;
+
+						.circle {
+							margin: 1px;
+							width: 10px;
+							height: 10px;
+							border-radius: 50%;
+							background-color: #da2110;
+						}
+					}
+
+					&:nth-child(1) {
+						left: 15%;
+					}
+					&:nth-child(2) {
+						right: 15%;
+					}
+				}
+			}
+		}
+	}
+	.super__trapeze {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
+		border-top: 43px solid #da2110;
+		border-left: 30px solid transparent;
+		border-right: 30px solid transparent;
+
+		.super__trapezeInside {
+			position: absolute;
+			bottom: 9px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: calc(100% + 35px);
+			border-top: 34px solid #fed100;
+			border-left: 24px solid transparent;
+			border-right: 24px solid transparent;
+
+			.super__lattice {
+				position: absolute;
+				bottom: 6px;
+				left: 50%;
+				transform: translateX(-50%);
+				width: calc(100% - 60px);
+				height: 28px;
+				background-image: repeating-linear-gradient(90deg, #da2110, #da2110 8px, transparent 8px, transparent 18px);
+			}
+		}
+	}
+}
+
+._brl {
+	border-top-left-radius: 40px;
+	border-bottom-left-radius: 40px;
+}
+._brr {
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+}

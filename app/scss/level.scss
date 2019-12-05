@@ -1,0 +1,47 @@
+.levelHalfCircle {
+	position: absolute;
+	top: 770px;
+	right: -170px;
+	width: 340px;
+	height: 340px;
+	border-radius: 50%;
+	background-color: #da2110;
+}
+
+@import 'level/levelModifiers.scss';
+
+.circleWrap {
+	transform: translateY(-50%);
+	width: 165px;
+	height: 165px;
+
+	.circle {
+		position: absolute;
+		width: 165px;
+		height: 165px;
+		border-radius: 50%;
+		border: 40px solid;
+
+		&._bYellow {
+			border-color: #fed100;
+		}
+		&._bBlack {
+			border-color: #000;
+		}
+		&._3 {
+			border-bottom-color: transparent;
+			border-right-color: transparent;
+			transform: rotate(45deg);
+		}
+	}
+}
+.hLine {
+	width: 65%;
+	height: 2px;
+}
+
+@import 'level/mounthBlock.scss';
+
+@import 'level/mediaLevel1440.scss';
+@import 'level/mediaLevel1080.scss';
+@import 'level/mediaLevel730.scss';

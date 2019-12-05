@@ -1,0 +1,81 @@
+@media screen and (max-width: 1080px) and (min-width: 731px) {
+	.levelHalfCircle {
+		top: 430px;
+		right: -85px;
+		width: 170px;
+		height: 170px;
+	}
+
+	._lOut {
+		left: -41px;
+	}
+	._rOut {
+		right: -41px;
+	}
+
+	.circleWrap {
+		width: 82px;
+		height: 82px;
+
+		.circle {
+			width: 82px;
+			height: 82px;
+			border: 20px solid;
+		}
+	}
+
+	.mounthBlock {
+		.mounthWrap {
+			width: 725px;
+
+			.present {
+				padding: 17px;
+				width: 125px;
+				height: 125px;
+				margin-right: 60px;
+
+				.present__title {
+					bottom: 17px;
+					font-size: 14px;
+				}
+			}
+
+			.mounth {
+				margin-right: 15px;
+				width: 170px;
+				height: 170px;
+				padding: 17px;
+
+				.mounth__letter {
+					font-size: 100px;
+				}
+
+				.mounth__article {
+					width: calc(100% - 35px);
+
+					.mounth__title {
+						margin-bottom: 15px;
+						font-size: 20px;
+					}
+
+					.mounth__paragraph {
+						margin-bottom: 17px;
+						font-size: 10px;
+					}
+
+					.mounth__letterWrap {
+						width: 82px;
+					}
+					.mounth__paragraphWrap {
+						padding-left: 22px;
+						width: calc(100% - 82px);
+					}
+				}
+
+				&._twin {
+					width: calc(170px * 2 + 15px);
+				}
+			}
+		}
+	}
+}

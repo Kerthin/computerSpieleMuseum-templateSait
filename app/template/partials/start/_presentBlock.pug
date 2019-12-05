@@ -1,0 +1,28 @@
+.presentBlock
+	.presentBlock__consols
+		.presentBlock__consoleBox
+			p.presentBlock__chose SELECCIONE LA CONSOLA
+
+		//- ATARI
+		include _atariConsole.pug
+		//- NINTENDO
+		include _nintendoConsole.pug
+		//- SUPER NINTENDO
+		include _superNintendoConsole.pug
+		//- PS ONE
+		include _g7Console.pug
+		//- XBOX ONE
+		include _xboxConsole.pug
+
+	.presentBlock__menu
+		.presentBlock__menuItem._fl._mr10
+			.presentBlock__angle
+		.presentBlock__menuItem._fl._mr10._pacman
+			+hoverItemMix('Pac Man', 0)
+		.presentBlock__menuItem._fl._boom
+			+hoverItemMix('Boom', 1)
+		.presentBlock__menuItem._fl._w310._mt10._mr10._space
+			+hoverItemMix('Atari Space', 2)
+		.presentBlock__menuItem._fl._mt10
+			.presentBlock__crossItem
+			.presentBlock__crossItem
