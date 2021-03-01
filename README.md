@@ -134,8 +134,7 @@ To develop the project through gulp, I used the following types of NPM plugins:
 
 - `app` - this repository is intended for files with the help of which the project is being developed. It is from this repository that all project files are compiled, which are later transferred to the `dist` repository;
 - `dist` - this folder is a repository where files from the `app` repository are compiled;
-- `dist (not minimized)` - repository is analogous to `dist` folder, but their difference is that in this repository files are not minimized for those who want to look at the compiled code;
-- `bower_components` - is a repository that contains components with their dependencies downloaded using `bower`.
+- `docs` - this repository need for `GitHub Pages`.
 
 #### The following describes in more detail the repository `app` and `dist`:
 
@@ -172,3 +171,28 @@ To develop the project through gulp, I used the following types of NPM plugins:
   - `webserver` - this command is run through the console by writing it `gulp webserver`. This command is used to start the local web server;
   - `clean` - this command is run through the console by writing it `gulp clean`. This command is used to clean up the repository;
   - `default` - this command is run through the console by writing it `gulp default`.This command is used to run all tasks at the same time.
+
+#### Gif
+
+  - Main page <br>
+  <a href="#"><img src="READMEimage/gif/main.gif" /></a>
+
+  - Start page <br>
+  <a href="#"><img src="READMEimage/gif/start.gif" /></a>
+
+  - Level page <br>
+  <a href="#"><img src="READMEimage/gif/level.gif" /></a>
+
+#### Desktop
+
+  - Main page
+  <a href="#"><img src="READMEimage/screenImage/main.png" /></a>
+
+  - Bonus page
+  <a href="#"><img src="READMEimage/screenImage/bonus.png" /></a>
+
+  - Start page
+  <a href="#"><img src="READMEimage/screenImage/start.png" /></a>
+  
+  - Level page
+  <a href="#"><img src="READMEimage/screenImage/level.png" /></a>
